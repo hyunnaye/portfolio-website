@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Homepage.css'
 import Typing from '../Typing/typing';
-import bg from '../../assets/bg-image.jpg'
+import bitmoji from '../../assets/bitmoji.PNG'
 
 function HomepageLinks({done}) {
     const about = <a className ='link' href='#'>About Me</a>
@@ -34,7 +34,7 @@ function HomepageLinks({done}) {
 function Homepage() {
     
     const homepageText = [
-        "Hi I'm Nayeon!", "I make cool stuff with codes",
+        "Hi I'm Nayeon!", "I make cool stuff with codes.",
         "Speaking of..", "This site is built by yours truly.",
         "Check out more by clicking one of the options below."
       ]
@@ -46,7 +46,7 @@ function Homepage() {
                 <Typing text={homepageText} setDone = {setDone} done={done} />
                 <HomepageLinks className='HomepageButtons' done={done} />
             </div>
-            
+            <img src={bitmoji} className='bitmoji' />
         </div>
     );
     
