@@ -1,6 +1,5 @@
 .NavbarItems {
-    background: linear-gradient(90deg, rgb(243, 128, 209) 0%, 
-    rgb(159, 0, 252) 100%);
+    background: rgb(159, 0, 252);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -36,7 +35,7 @@
     padding: 0.5rem 1rem;
 } 
 .nav-links:hover {
-    background-color: rgb(199, 141, 233);
+    background-color: rgb(192, 105, 241);
     border-radius: 3px;
     transition: all 0.2s ease-out;
 }
@@ -73,7 +72,7 @@
         padding-right: 0;
     }
     .nav-menu.active {
-        background: rgba(197, 111, 236, 0.719);
+        background: rgba(171, 25, 255, 0.719);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;

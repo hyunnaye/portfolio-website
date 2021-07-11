@@ -1,0 +1,50 @@
+
+
+.linkContainer {
+    flex-direction: row;
+    text-align: left;
+    margin-left: 10%;
+}
+.link {
+    color:black;
+    margin-right: 5%;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+/* .falldownContainer {
+    animation-name: falldown;
+    animation-name: falldown;
+    animation-duration: 10s;
+    position: absolute;
+    z-index: 1;
+    margin-left: 20%;
+} */
+
+@keyframes falldown {
+    from {top: 0vh;}
+    to {top: 100vh;}
+}
+
+@media screen and (min-width: 1050px) {
+    .linkContainer {
+        flex-direction: row;
+        text-align: left;
+    }
+    .link {
+        color:black;
+        margin-right: 10%;
+        font-size: 20px;
+        font-weight: bold;
+    
+    }
+    /* .falldownContainer {
+        animation-name: falldown;
+        animation-duration: 10s;
+        position: absolute;
+        z-index: 1;
+        margin-left: 20%;
+    } */
+    
+}

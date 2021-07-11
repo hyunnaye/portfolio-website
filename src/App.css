@@ -1,5 +1,15 @@
 .App {
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  background: linear-gradient(180deg, rgb(246, 234, 252) 0%, rgb(221, 173, 247) 100%);
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+.Content {
+  align-content: center;
+  justify-content: center;
 }
 
