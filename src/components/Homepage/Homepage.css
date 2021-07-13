@@ -9,7 +9,7 @@
 }
 .link {
     color:black;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
 
 }
@@ -38,9 +38,9 @@
         top: 10%;
         left: 60%;
     }
+
     .link {
-        margin-right: 10%;
-        font-size: 20px;
+        font-size: 30px;
     
     }
     /* .falldownContainer {
