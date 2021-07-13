@@ -23,7 +23,7 @@ export default function Typing({done, text, setDone}) {
         const typeTimeout = setTimeout(() => {
             setCurrText(currText + text[index.current].charAt(subIndex.current));
             subIndex.current += 1;
-            }, 70); 
+            }, 45); 
         return() => clearTimeout(typeTimeout)
     }, [currText, text, subIndex, index, setDone]
     );
