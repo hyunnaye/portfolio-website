@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Homepage.css'
 import Typing from '../Typing/typing';
-import bitmoji from '../../assets/bitmoji.PNG'
+import bitmoji from '../../assets/bitmoji-3.png'
 
 function HomepageLinks({done}) {
     const about = <a className ='link' href='#'>About Me</a>
