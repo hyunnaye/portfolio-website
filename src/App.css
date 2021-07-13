@@ -1,10 +1,12 @@
 .App {
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, rgb(217, 221, 248) 0%, rgb(221, 187, 253) 100%);
+  background: linear-gradient(180deg, rgb(125, 139, 228) 0%, rgb(94, 47, 156) 100%);
   flex: 1;
   height: 100vh;
   overflow: hidden;
+  z-index: -1;
+  position: relative;
   
 }
 

@@ -43,6 +43,7 @@ function Homepage() {
     return(
         <div className='homepageItems'>
             <div className='textContainer'>
+                <div className='whiteBox'/>
                 <Typing text={homepageText} setDone = {setDone} done={done} />
                 <HomepageLinks className='HomepageButtons' done={done} />
             </div>
