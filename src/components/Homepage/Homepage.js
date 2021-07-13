@@ -3,7 +3,7 @@ import './Homepage.css'
 import Typing from '../Typing/typing';
 import bitmoji from '../../assets/bitmoji-3.png'
 
-function homepageLinks({done}) {
+function HomepageLinks({done}) {
     const about = <a className ='link' href='#'>About Me</a>
     const resume = <a className ='link' href='#'>Resume</a>
     const projects = <a className ='link' href='#'>Projects</a>
@@ -31,7 +31,7 @@ function homepageLinks({done}) {
 //     );
 // }
 
-function homepage() {
+function Homepage() {
     
     const homepageText = [
         "Hi I'm Nayeon!", "I make cool stuff with codes.",
@@ -53,4 +53,4 @@ function homepage() {
     
 };
 
-export default homepage
+export default Homepage
