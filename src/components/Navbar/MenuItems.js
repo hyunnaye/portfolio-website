@@ -6,22 +6,22 @@ export const MenuItems = [
     },
     {
         name: 'About Me',
-        url: '/#/about',
+        url: '/about',
         cName: 'nav-links'
     },
     {
         name: 'Resume',
-        url: '/#/resume',
+        url: '/resume',
         cName: 'nav-links'
     },
     {
         name: 'Projects',
-        url: '/#/projects',
+        url: '/projects',
         cName: 'nav-links'
     },
     {
         name: 'Contact',
-        url: '/#/contact',
+        url: '/contact',
         cName: 'nav-links'
     },
 ]

@@ -9,16 +9,15 @@ import AboutMe from './components/AboutMe/aboutMe';
 import Contact from './components/Contact/contact';
 
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 function App() {
   
   return (
-    <Router>
+    <Router basename={public.env.PUBLIC_URL}>
       <div className="App">
       <Switch>
       `   <Route exact path='/' component={Homepage}/>
