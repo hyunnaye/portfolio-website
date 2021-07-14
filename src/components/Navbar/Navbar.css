@@ -1,5 +1,5 @@
 .NavbarItems {
-    background: rgb(159, 0, 252);
+    background: rgb(125, 139, 228);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@
     padding: 0.5rem 1rem;
 } 
 .nav-links:hover {
-    background-color: rgb(192, 105, 241);
+    background-color: rgb(106, 117, 189);
     border-radius: 3px;
     transition: all 0.2s ease-out;
 }
@@ -72,7 +72,7 @@
         padding-right: 0;
     }
     .nav-menu.active {
-        background: rgba(171, 25, 255, 0.719);
+        background: rgb(106, 117, 189);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -94,7 +94,7 @@
     }
 
     .nav-links:hover {
-        background: rgb(199, 141, 233);
+        background: rgb(128, 141, 224);
         border-radius: 0;
         width: 100%;
         padding-left: 0;

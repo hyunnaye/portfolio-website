@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import './Homepage.css'
+import './homepage.css'
 import Typing from '../Typing/typing';
 import bitmoji from '../../assets/bitmoji-3.png'
 
 function HomepageLinks({done}) {
-    const about = <a className ='link' href='#'>About Me</a>
-    const resume = <a className ='link' href='#'>Resume</a>
-    const projects = <a className ='link' href='#'>Projects</a>
-    const contact = <a className ='link' href='#'>Contact</a>
+    const about = <a className ='link' href='/about'>About Me</a>
+    const resume = <a className ='link' href='/resume'>Resume</a>
+    const projects = <a className ='link' href='projects'>Projects</a>
+    const contact = <a className ='link' href='contact'>Contact</a>
 
     if (done) {
         return(
@@ -41,14 +41,17 @@ function Homepage() {
     
     const [done, setDone] = useState(false);
     return(
-        <div className='homepageItems'>
-            <div className='textContainer'>
-                <div className='whiteBox'/>
-                <Typing text={homepageText} setDone = {setDone} done={done} />
-                <HomepageLinks className='HomepageButtons' done={done} />
+        <div className='homeContainer'>
+            <div className='homepageItems'>
+                <div className='textContainer'>
+                    <div className='whiteBox'/>
+                    <Typing text={homepageText} setDone = {setDone} done={done} />
+                    <HomepageLinks className='HomepageButtons' done={done} />
+                </div>
+                <img src={bitmoji} className='bitmoji' />
             </div>
-            <img src={bitmoji} className='bitmoji' />
         </div>
+        
     );
     
 };
