@@ -8,7 +8,7 @@ import AboutMe from './components/AboutMe/aboutMe';
 import Contact from './components/Contact/contact';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -17,7 +17,7 @@ import {
 function App() {
   
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
       <Switch>
       `   <Route exact path='/' component={Homepage}/>
