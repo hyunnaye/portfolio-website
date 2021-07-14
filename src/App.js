@@ -1,3 +1,4 @@
+  
 import './App.css';
 import React from "react";
 import Navbar from "./components/Navbar/Navbar"
@@ -8,7 +9,7 @@ import AboutMe from './components/AboutMe/aboutMe';
 import Contact from './components/Contact/contact';
 
 import {
-  Router as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
