@@ -17,7 +17,7 @@ import {
 function App() {
   
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
       <Switch>
       `   <Route exact path='/' component={Homepage}/>
