@@ -8,7 +8,7 @@ import AboutMe from './components/AboutMe/aboutMe';
 import Contact from './components/Contact/contact';
 
 import {
-  BrowserRouter as Router,
+  Router as Router,
   Switch,
   Route,
   Link
@@ -20,11 +20,11 @@ function App() {
     <Router>
       <div className="App">
       <Switch>
-      `   <Route exact path= {process.env.PUBLIC_URL + '/'} component={Homepage}/>
-          <Route exact path={process.env.PUBLIC_URL + '/about'} component={AboutMe}/>
-            <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact}/>
-          <Route exact path={process.env.PUBLIC_URL + '/projects'} component={Projects}/>
-          <Route exact path={process.env.PUBLIC_URL + '/resume'} component={Resume}/>
+      `   <Route exact path='/' component={Homepage}/>
+          <Route exact path='/about' component={AboutMe}/>
+          <Route exact path='/contact' component={Contact}/>
+          <Route exact path='/projects' component={Projects}/>
+          <Route exact path='/resume' component={Resume}/>
       </Switch>
         
       </div>
