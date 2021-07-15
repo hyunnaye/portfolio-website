@@ -19,7 +19,7 @@ export default function Typing({done, text, setDone}) {
         const typeTimeout = setTimeout(() => {
             setCurrText(currText +`\n`+text[index.current] );
             index.current += 1;
-            }, 750); 
+            }, 850); 
         return() => clearTimeout(typeTimeout)
     }, [currText, text, index, setDone]
     );

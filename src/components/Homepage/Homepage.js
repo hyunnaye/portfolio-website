@@ -35,8 +35,9 @@ function Homepage() {
     
     const homepageText = [
         "Hi I'm Nayeon!", "I make cool stuff with codes.",
-        "Speaking of..", "This site is built by yours truly.",
-        "Check out more by clicking one of the options below."
+        "Including this site!",
+        "Check out more by",
+        "clicking one of the options below."
       ]
     
     const [done, setDone] = useState(false);
