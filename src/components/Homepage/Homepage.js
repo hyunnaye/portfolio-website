@@ -5,15 +5,13 @@ import { useSpring, animated } from 'react-spring';
 
 
 function HomepageLinks() {
-    const about = <a className ='link' href='/about'>About Me</a>
-    const resume = <a className ='link' href='/resume'>Resume</a>
-    const projects = <a className ='link' href='/projects'>Projects</a>
-    const contact = <a className ='link' href='/contact'>Contact</a>
+    const resume = <a className ='pageLink' href='/experience'>Experience</a>
+    const projects = <a className ='pageLink' href='/projects'>Projects</a>
+    const contact = <a className ='pageLink' href='/contact'>Contact</a>
 
 
     return(
         <div className='linkContainer'>
-            {about}
             {resume}
             {projects}
             {contact}
@@ -22,7 +20,7 @@ function HomepageLinks() {
 };
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
-const trans = (x, y, s) => `perspective(4000px) rotateX(${x}deg) rotateY(${y}deg) scale(1)`
+const trans = (x, y, s) => `perspective(3000px) rotateX(${x}deg) rotateY(${y}deg) scale(1)`
 
 function toggle(effect, enableEffect, setProps) {
     if (effect){

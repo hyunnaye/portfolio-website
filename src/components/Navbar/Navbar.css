@@ -15,7 +15,10 @@
     font-size: 22px;
     text-decoration: none;
 }
-
+.navbar-logo:hover {
+    color: white;
+    text-decoration: none;
+}
 
 .nav-menu {
     display: grid;
@@ -27,6 +30,7 @@
     justify-content: end;
     margin-right: 3rem;
     font-size: 18px;
+    margin-top: 1em;
 
 }
 
@@ -39,6 +43,8 @@
     background-color: rgb(106, 117, 189);
     border-radius: 3px;
     transition: all 0.2s ease-out;
+    color: white;
+    text-decoration: none;
 }
 
 .fa-bars {
@@ -91,7 +97,6 @@
         margin: 0;
         padding-left: 0;
         padding-right: 0;
-
     }
 
     .nav-links:hover {
@@ -114,7 +119,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 60%);
+        transform: translate(-100%, 40%);
         font-size: 2rem;
         cursor: pointer;
     }

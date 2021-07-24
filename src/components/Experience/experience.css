@@ -1,0 +1,59 @@
+.row {
+    margin-bottom: 5%;
+    align-self: center;
+}
+.col {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+.header {
+    font-weight: bold;
+    display: inline;
+}
+
+.cardBody {
+    margin-top: 10%;
+}
+
+.pageContainer {
+    background-color:  rgb(247, 245, 241);
+    width: '100%'
+}
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.cardTitle {
+    font-weight: bold;
+}
+.cardCompany {
+    font-weight: bold;
+    font-size: 14px;
+}
+.dropdown {
+    width: 100%;
+    padding: 2% 0 2% 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fas {
+    position: absolute;
+    right: 5%;
+    font-size: 1.5rem;
+}
+.rowSkill {
+    margin-bottom: 0;
+}
+.colSkill {
+    padding: 0;
+}
+.h5 {
+    font-weight: bold;
+}
+.title {
+    padding: 5%;
+    background-color: white;
+    margin: 0;
+}

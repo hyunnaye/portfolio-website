@@ -3,8 +3,7 @@ import './App.css';
 import React from "react";
 import Homepage from './components/Homepage/homepage';
 import Projects from './components/Projects/projects';
-import Resume from './components/Resume/resume';
-import AboutMe from './components/AboutMe/aboutMe';
+import Experience from './components/Experience/experience';
 import Contact from './components/Contact/contact';
 
 import {
@@ -20,10 +19,9 @@ function App() {
       <div className="App">
       <Switch>
       `   <Route exact path='/' component={Homepage}/>
-          <Route exact path='/about' component={AboutMe}/>
           <Route exact path='/contact' component={Contact}/>
           <Route exact path='/projects' component={Projects}/>
-          <Route exact path='/resume' component={Resume}/>
+          <Route exact path='/experience' component={Experience}/>
       </Switch>
         
       </div>

@@ -5,6 +5,7 @@
     height: 100%;
     position: absolute;
     z-index: -2;
+    overflow: hidden;
 }
 .homepageItems {
     width: 100%;
@@ -17,13 +18,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: left;
-    margin: 10% 12% 10% 12%;
+    margin: 5% 12% 10% 12%;
     justify-content: space-between;
     display: flex;
     z-index: 1;
     position: relative;
 }
-.link {
+.pageLink {
     color:black;
     z-index: 2;
     position: relative;
@@ -77,13 +78,16 @@
     .bitmoji{
         display: block;
         position: absolute;
-        top: 12%;
+        top: 20%;
         left: 65%;
     }
 
-    .link {
+    .pageLink {
         font-size: 30px;
     
+    }
+    .linkContainer{
+        width: 35%;
     }
     /* .falldownContainer {
         animation-name: falldown;
@@ -116,19 +120,20 @@
 
     
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
    
     .linkContainer {
         margin: 10% 15% 10% 15%;
         justify-content: space-between;
     }
-    .link {
-        font-size: 20px;
+    .pageLink {
+        font-size: 15px;
         margin-bottom: 10%;
     }
     .text {
         font-size: 22px;
         margin-left: 15%;
+        margin-top: 40%;
     
     }
 }
