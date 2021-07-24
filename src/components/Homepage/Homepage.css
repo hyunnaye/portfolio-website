@@ -12,6 +12,7 @@
     position: absolute;
 }
 
+
 .linkContainer {
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,6 +69,9 @@
     transition: all 0.5s ease-in;
 }
 
+.animationText {
+    visibility: hidden;
+}
 
 @media screen and (min-width: 1050px) {
     .bitmoji{
@@ -97,6 +101,20 @@
         width: 40%;
         font-size: 36px;
     }
+
+    .animationText {
+        position: absolute;
+        z-index: 4;
+        bottom: 2%;
+        text-align: center;
+        width: 100%;
+        color: white;
+        visibility: visible;
+    }
+
+
+
+    
 }
 @media screen and (max-width: 800px) {
    

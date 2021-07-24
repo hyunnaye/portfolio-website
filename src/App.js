@@ -1,7 +1,6 @@
   
 import './App.css';
 import React from "react";
-import Navbar from "./components/Navbar/Navbar"
 import Homepage from './components/Homepage/homepage';
 import Projects from './components/Projects/projects';
 import Resume from './components/Resume/resume';

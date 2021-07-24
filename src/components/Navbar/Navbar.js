@@ -14,7 +14,7 @@ class Navbar extends Component {
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">Nayeon Hyun</h1>
+                <a className="navbar-logo" href='/'>Nayeon Hyun</a>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.isClicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
