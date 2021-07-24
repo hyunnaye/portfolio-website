@@ -35,7 +35,7 @@ function toggle(effect, enableEffect, setProps) {
 }
 function Homepage() {
     
-    const [effect, enableEffect] = useState(false);
+    const [effect, enableEffect] = useState(true);
       
     const text = "Hi I'm Nayeon! \n I make cool stuff with codes. \n Including this site! \n Check out the pages below for more."
     const [props, setProps] = useSpring(() => ({xys: [0, 0, 1], config: {mass: 10, tension: 200, friction: 50}}))
