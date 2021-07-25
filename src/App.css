@@ -2,6 +2,7 @@
   text-align: center;
   font-family: "Montserrat", sans-serif;
   flex: 1;
+  height: 100vh;
   z-index: 1;
   position: relative;
 }
