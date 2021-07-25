@@ -51,7 +51,7 @@ function Homepage() {
                     </div>
                     <img src={bitmoji} className='bitmoji' alt="icon" />
             </animated.div>
-            <p className='animationText'>PC animations can be enabled/disabled by clicking</p>
+            <p className='animationText'>Hover animation can be enabled/disabled by clicking</p>
         </div>
         
     );

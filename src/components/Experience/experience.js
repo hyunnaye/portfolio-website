@@ -137,16 +137,17 @@ const Education = (props) => {
             <h2 className='header'>Education</h2>
             <i className={props.education  ? "fas arrow fa-chevron-up" : "fas arrow fa-chevron-down"} ></i>
         </div>
-        <Collapse in={props.education} style={{width: '50%'}}>
+        <Collapse in={props.education} className='educationCollapse'>
             <Container>
                 <Row className='row' >
-                    <Col  xs={12} md={4} className='col'>
+                    <Col  xs={12} lg={4} className='col'>
                         <img src={uoft} alt='uoft logo' className='uoftLogo'/>
                     </Col>
-                    <Col  xs={12} md={7} className='col educationDesc'>
-                        <h4>University of Toronto - Honours Bachelor of Science</h4>
-                        <h4>Bioinformatics and Computational Biology Specialist</h4>
-                        <h5>Sep 2019 - May 2024</h5>
+                    <Col  xs={12} lg={7} className='col educationDesc'>
+                        <h4 className='educationH4'>University of Toronto</h4>
+                        <h4 className='educationH4'>Honours Bachelor of Science</h4>
+                        <h4 className='educationH4'>Bioinformatics and Computational Biology Specialist</h4>
+                        <h5 className='educationH5'>Sep 2019 - May 2024</h5>
                     </Col>
                 </Row>
             </Container>

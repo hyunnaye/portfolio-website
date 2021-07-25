@@ -14,11 +14,12 @@
 }
 
 .cardBody {
-    margin-top: 10%;
+    padding-top: 10%;
+    
+    background-color: rgb(236, 236, 236);
 }
 
 .pageContainer {
-    background-color: rgb(255, 255, 255);
     padding-bottom: 10%;
     width: 100%;
     position: absolute;
@@ -79,6 +80,9 @@
     align-items: center;
     padding-top: 5%;
 }
+.educationCollapse {
+    width: 50%;
+}
 
 @media screen and (max-width: 1050px) {
    
@@ -98,9 +102,22 @@
     }
     .dropdown {
         width: 75%;
-        padding: 2%
+        padding: 2%;
     }
     .title {
         margin: 5%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .header {
+        font-size: 14px;
+    }
+    .educationH4 {
+        font-size: 16px;
+    }
+    .educationH5 {
+        font-size: 14px;
     }
 }
