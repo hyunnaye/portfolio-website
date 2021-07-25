@@ -8,12 +8,13 @@ import uoftlaw from '../../assets/uoftlaw.jpg';
 import cause from '../../assets/cause.jpeg';
 import woodsworth from '../../assets/woodsworth.jpeg';
 import wrisc from '../../assets/wrisc.png';
+import uoft from '../../assets/uoft.png';
 
 
 const Position = (props) => {
     return(
         <div className='h-100'>
-            <Card style={{ width: '70%'}} className='card h-100'>
+            <Card style={{ width: '80%'}} className='card h-100'>
                 <Card.Img variant="top" src={props.img}/>
                 <Card.Body className='cardBody h-100'>
                     <Card.Title className='cardTitle'>{props.title}</Card.Title>
@@ -29,9 +30,9 @@ const Position = (props) => {
 const TechExperience = (props) => {
     return(
     <>
-        <div className={props.techExp ? 'dropdown' : 'dropdown border border-1 border-secondary'}>
+        <div className={props.techExp ? 'dropdown' : 'dropdown border border-1 border-secondary'}  onClick={() => props.setTechExp(!props.techExp )}>
             <h2 className='header'>Technical Experience</h2>
-            <i className={props.techExp  ? "fas fa-chevron-up" : "fas fa-chevron-down"} onClick={() => props.setTechExp(!props.techExp )}></i>
+            <i className={props.techExp  ? "fas arrow fa-chevron-up" : "fas arrow fa-chevron-down"}></i>
         </div>
         <Collapse in={props.techExp } style={{width: '100%'}}>
             <Container>
@@ -63,17 +64,17 @@ const TechExperience = (props) => {
 const NonTechExperience = (props) => {
     return(
     <>
-        <div className={props.nonTechExp ? 'dropdown' : 'dropdown border border-1 border-secondary'}>
+        <div className={props.nonTechExp ? 'dropdown' : 'dropdown border border-1 border-secondary'} onClick={() => props.setNonTechExp(!props.nonTechExp)}>
             <h2 className='header'>Non-Technical Experience</h2>
-            <i className={props.nonTechExp  ? "fas fa-chevron-up" : "fas fa-chevron-down"} onClick={() => props.setNonTechExp(!props.nonTechExp)}></i>
+            <i className={props.nonTechExp  ? "fas arrow fa-chevron-up" : "fas arrow fa-chevron-down"} ></i>
         </div>
         <Collapse in={props.nonTechExp } style={{width: '100%'}}>
             <Container>
                 <Row className='row' style={{minHeight: 847}}>
                     <Col  xs={12} md={4} className='col'>
                         <Position title='Vice President of Public Relations' img={wrisc} company='WRiSC UofT' duration='May 2020 - May 2021'
-                        description="Woodsworth Racialized Students' Collective (WRISC) is a club that strives to advocate for and enrich the lives of 
-                        racialized students in University of Toronto. As the Vice-President of Public Relations, complete numerous tasks like promoting 
+                        description="Woodsworth Racialized Students' Collective (WRISC) is a club that strives to advocate for racialized students in UofT Woodsworth College. 
+                        As the VP of Public Relations, completed tasks like promoting 
                         racial advocacy through social media posts, news, and photos during events.
 
                         WRiSC received WCSA’s Club of the Year award during the time of this position." /> 
@@ -85,7 +86,7 @@ const NonTechExperience = (props) => {
                     </Col>
                     <Col  xs={12} md={4} className='col'>
                         <Position title='Tutor' img={cause} company='CAUSE Tutoring' duration='Nov 2019 - Apr 2019'
-                        description='Tutor at CAUSE; a non-profit organization whom aim to enhance access to education among the homeless, 
+                        description='Mathematics and Reading Tutor at CAUSE; a non-profit organization whom aim to enhance access to education among the homeless, 
                         vulnerable, and at-risk population in downtown Ottawa and Toronto.' />
                     </Col>
                 </Row>
@@ -98,9 +99,9 @@ const NonTechExperience = (props) => {
 const Skills = (props) => {
     return(
     <>
-        <div className={props.skills ? 'dropdown border-top border-1 border-secondary' : 'dropdown border border-1 border-secondary'}>
+        <div className={props.skills ? 'dropdown border-top border-1 border-secondary' : 'dropdown border border-1 border-secondary'}  onClick={() => props.setSkills(!props.skills)}>
             <h2 className='header'>Skills</h2>
-            <i className={props.skills  ? "fas fa-chevron-up" : "fas fa-chevron-down"} onClick={() => props.setSkills(!props.skills)}></i>
+            <i className={props.skills  ? "fas arrow fa-chevron-up" : "fas arrow fa-chevron-down"}></i>
         </div>
         <Collapse in={props.skills } style={{width: '100%'}}>
             <Container>
@@ -129,19 +130,48 @@ const Skills = (props) => {
     </>
     );
 }
-
+const Education = (props) => {
+    return(
+    <>
+        <div className={props.education ? 'dropdown' : 'dropdown border border-1 border-secondary'} onClick={() => props.setEducation(!props.education)}>
+            <h2 className='header'>Education</h2>
+            <i className={props.education  ? "fas arrow fa-chevron-up" : "fas arrow fa-chevron-down"} ></i>
+        </div>
+        <Collapse in={props.education} style={{width: '50%'}}>
+            <Container>
+                <Row className='row' >
+                    <Col  xs={12} md={4} className='col'>
+                        <img src={uoft} alt='uoft logo' className='uoftLogo'/>
+                    </Col>
+                    <Col  xs={12} md={7} className='col educationDesc'>
+                        <h4>University of Toronto - Honours Bachelor of Science</h4>
+                        <h4>Bioinformatics and Computational Biology Specialist</h4>
+                        <h5>Sep 2019 - May 2024</h5>
+                    </Col>
+                </Row>
+            </Container>
+        </Collapse>
+    </>
+    );
+}
 const Experience = () => {
-    const [skills, setSkills] = useState(true);
+    const [education, setEducation] = useState(false);
+    const [skills, setSkills] = useState(false);
     const [techExp, setTechExp] = useState(false);
     const [nonTechExp, setNonTechExp] = useState(false);
     return(
-        <div className='pageContainer'>
-            <Navbar />
+        <div className='pageContainer' style={{position: 'relative'}}>
+            <div  style={{position: 'sticky', top: 0, zIndex: 5}}>
+                <Navbar />
+                
+            </div>
             <h1 className='title'>Skills and Experiences</h1>
-            <Skills skills={skills} setSkills={setSkills}/>
-            <TechExperience techExp={techExp} setTechExp={setTechExp}/>
-            <NonTechExperience nonTechExp={nonTechExp} setNonTechExp={setNonTechExp}/>
-            
+            <div className='dropdownContainer'>
+                <Education education={education} setEducation={setEducation}/>
+                <Skills skills={skills} setSkills={setSkills}/>
+                <TechExperience techExp={techExp} setTechExp={setTechExp}/>
+                <NonTechExperience nonTechExp={nonTechExp} setNonTechExp={setNonTechExp}/>
+            </div>
         </div>
     );
 };
