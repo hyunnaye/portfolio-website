@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     font-size: 12px;
-   
 }
 
 .navbar-logo {
@@ -27,9 +26,9 @@
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    width: 70vw;
+    width: 80vw;
     justify-content: end;
-    margin-right: 3rem;
+    margin-right: 2rem;
     font-size: 18px;
     margin-top: 1em;
 
@@ -59,11 +58,38 @@
 .menu-icon {
     display: none;
 }
-
+.navIcon {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    padding: 0 1rem;
+}
+.navIcon:hover {
+    color: rgb(106, 117, 189);
+    text-decoration: none;
+    
+}
+.navIconContainer {
+    flex-direction: row;
+    min-width: 70px;
+    height: min-content;
+}
+.navIconMobile {
+    display: none;
+}
 @media screen and (max-width: 950px) {
     .NavbarItems {
         position: relative;
         margin: 0;
+    }
+    .navIconMobile {
+        display: block;
+        flex-direction: row;
+        padding: 0.5rem 1rem;
+
+    }
+    .navIconPC {
+        display: none;
     }
     .nav-menu {
         display: flex;
@@ -107,7 +133,11 @@
         padding-left: 0;
         padding-right: 0;
     }
-
+    .navIcon:hover {
+        color: rgb(128, 141, 224);
+        text-decoration: none;
+        
+    }
     .navbar-logo {
         position: absolute;
         top: 20%;

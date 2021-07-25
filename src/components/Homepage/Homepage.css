@@ -12,7 +12,9 @@
     height: 100%;
     position: absolute;
 }
-
+.pageLink:hover {
+    color: rgb(94, 47, 156);
+}
 .animationText {
     position: absolute;
     z-index: 4;
@@ -29,6 +31,7 @@
     text-align: left;
     margin: 5% 12% 10% 12%;
     justify-content: space-between;
+    align-items: center;
     display: flex;
     z-index: 1;
     position: relative;
@@ -38,7 +41,6 @@
     z-index: 2;
     position: relative;
     font-weight: bold;
-
 }
 .bitmoji{
     display: none;
@@ -70,6 +72,9 @@
     transition: all 0.5s ease-in;
 }
 
+.mobileOnly {
+    visibility: hidden;
+}
 
 @media screen and (min-width: 1050px) {
     .bitmoji{
@@ -84,7 +89,7 @@
     
     }
     .linkContainer{
-        width: 35%;
+        width: 45%;
     }
     /* .falldownContainer {
         animation-name: falldown;
@@ -107,24 +112,103 @@
 @media screen and (max-width: 768px) {
    
     .linkContainer {
-        margin: 10% 15% 10% 15%;
-        justify-content: space-between;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1;
+        flex-wrap: wrap;
+        
+        position: relative;
     }
     .pageLink {
-        font-size: 15px;
+        font-size: 18px;
         margin-bottom: 10%;
     }
+    
     .text {
-        font-size: 22px;
-        margin-left: 15%;
+        font-size: 26px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 35%;
+        text-align: center;
     }
     .animationText {
         visibility: hidden;
     }
     .whiteBox {
-        height: 70%;
-        margin-top: 15%;
-        margin-bottom: 15%;
+        height: 65%;
+        margin-top: 17.5%;
+        margin-bottom: 17.5%;
+    }
+    .linkIcon {
+        color: #fff;
+        font-size: 30px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .pcOnly {
+        display: none;
+    }
+   
+    .linkContainer {
+        flex-direction: row;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1;
+        flex-wrap: wrap;
+        
+        position: relative;
+    }
+    .pageLink {
+        font-size: 18px;
+        margin-bottom: 10%;
+    }
+    .text {
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35%;
+        text-align: center;
+    }
+    .animationText {
+        visibility: hidden;
+    }
+    .whiteBox {
+        height: 65%;
+        margin-top: 17.5%;
+        margin-bottom: 17.5%;
+    }
+    .mobileOnly {
+        visibility: visible;
+    }
+    .linkIcon {
+        color: #fff;
+        font-size: 30px;
+        margin-left: 1%;
+        margin-right: 1%;
+        text-decoration: none;
+    }
+    .linkIcon:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    .iconContainer {
+        position: absolute;
+        bottom: 15%;
+        width: 100%;
+        align-items: center;
     }
 }

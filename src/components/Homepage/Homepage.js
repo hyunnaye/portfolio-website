@@ -2,19 +2,21 @@ import React, {useState} from 'react';
 import './homepage.css';
 import bitmoji from '../../assets/bitmoji-3.png';
 import { useSpring, animated } from 'react-spring';
+import { Link } from 'react-router-dom';
 
 
 function HomepageLinks() {
     const resume = <a className ='pageLink' href='/experience'>Experience</a>
     const projects = <a className ='pageLink' href='/projects'>Projects</a>
-    const contact = <a className ='pageLink' href='/contact'>Contact</a>
-
+    const linkedIn = <a className ='pageLink pcOnly' href='//www.linkedin.com/in/nayeon-hyun-9b08a119a/'>LinkedIn</a>
+    const github = <a className ='pageLink pcOnly'  href='//www.github.com/in/hyunnaye/'>GitHub</a>
 
     return(
         <div className='linkContainer'>
             {resume}
             {projects}
-            {contact}
+            {linkedIn}
+            {github}
         </div>
     );
 };
@@ -46,11 +48,14 @@ function Homepage() {
                     <div className='textContainer'>
                         <div className='whiteBox'/>
                         <p className='text'>{text}</p>
-                        <HomepageLinks className='HomepageButtons'  />
-                        
+                        <HomepageLinks className='HomepageButtons'  />  
                     </div>
                     <img src={bitmoji} className='bitmoji' alt="icon" />
             </animated.div>
+            <div className='iconContainer mobileOnly'>
+                <a className="fab fa-linkedin linkIcon" href='//www.linkedin.com/in/nayeon-hyun-9b08a119a/'></a>
+                <a className="fab fa-github linkIcon" href='//www.github.com/hyunnaye'></a>
+            </div>
             <p className='animationText'>Hover animation can be enabled/disabled by clicking</p>
         </div>
         
