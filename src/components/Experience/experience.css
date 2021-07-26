@@ -44,7 +44,7 @@
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
-    background: linear-gradient(90deg, rgb(125, 139, 228) 0%, rgb(94, 47, 156) 100%);
+    background: rgb(117, 119, 241);
     border-radius: 10px;
     justify-content: space-between;
 }

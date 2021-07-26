@@ -30,7 +30,7 @@ const Position = (props) => {
 const TechExperience = (props) => {
     return(
     <>
-        <div className={props.techExp ? 'dropdown' : 'dropdown border border-1 border-secondary'}  onClick={() => props.setTechExp(!props.techExp )}>
+        <div  className='dropdown'  onClick={() => props.setTechExp(!props.techExp )}>
             <h2 className='header'>Technical Experience</h2>
             <i className={props.techExp  ? "fas arrow fa-chevron-up" : "fas arrow fa-chevron-down"}></i>
         </div>
@@ -64,7 +64,7 @@ const TechExperience = (props) => {
 const NonTechExperience = (props) => {
     return(
     <>
-        <div className={props.nonTechExp ? 'dropdown' : 'dropdown border border-1 border-secondary'} onClick={() => props.setNonTechExp(!props.nonTechExp)}>
+        <div className='dropdown' onClick={() => props.setNonTechExp(!props.nonTechExp)}>
             <h2 className='header'>Non-Technical Experience</h2>
             <i className={props.nonTechExp  ? "fas arrow fa-chevron-up" : "fas arrow fa-chevron-down"} ></i>
         </div>
@@ -99,7 +99,7 @@ const NonTechExperience = (props) => {
 const Skills = (props) => {
     return(
     <>
-        <div className={props.skills ? 'dropdown border-top border-1 border-secondary' : 'dropdown border border-1 border-secondary'}  onClick={() => props.setSkills(!props.skills)}>
+        <div  className='dropdown'  onClick={() => props.setSkills(!props.skills)}>
             <h2 className='header'>Skills</h2>
             <i className={props.skills  ? "fas arrow fa-chevron-up" : "fas arrow fa-chevron-down"}></i>
         </div>
