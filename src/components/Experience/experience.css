@@ -11,11 +11,11 @@
     font-weight: bold;
     display: inline;
     color: white;
+    font-size: 1rem;
 }
 
 .cardBody {
     padding-top: 10%;
-    
     background-color: rgb(236, 236, 236);
 }
 
@@ -31,10 +31,11 @@
 }
 .cardTitle {
     font-weight: bold;
+    font-size: 1.5rem;
 }
 .cardCompany {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
 }
 .dropdown {
     width: 40%;
@@ -50,7 +51,7 @@
 .fas {
     position: absolute;
     right: 5%;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .rowSkill {
     margin-bottom: 2%;
@@ -83,11 +84,15 @@
 .educationCollapse {
     width: 50%;
 }
-
+.cardTitle {
+    font-size: 1rem;
+}
+.rowSkillMobile {
+    display: none;
+}
 @media screen and (max-width: 1050px) {
-   
     .header {
-        font-size: 18px;
+        font-size: 0.9rem;
     }
     .arrow {
         font-size: 1rem;
@@ -95,7 +100,7 @@
         color: white;
     }
     .h5 {
-        font-size: 12px;
+        font-size: 1rem;
     }
     .pageContainer {
         height: 100%;
@@ -109,15 +114,26 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    
+@media screen and (max-width: 768px) {
+    .rowSkillMobile {
+        display: block;
+    }
+    .rowSkillPC {
+        display: none;
+    }
     .header {
-        font-size: 14px;
+        font-size: 0.9rem;
     }
     .educationH4 {
-        font-size: 16px;
+        font-size: 1.25rem;
+    }
+    .cardTitle {
+        font-size: 1rem;
     }
     .educationH5 {
-        font-size: 14px;
+        font-size: 1rem ;
+    }
+    .h5 {
+        font-size: 0.5rem;
     }
 }

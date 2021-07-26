@@ -29,49 +29,54 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: left;
-    margin: 5% 12% 10% 12%;
     justify-content: space-between;
     align-items: center;
     display: flex;
     z-index: 1;
     position: relative;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 .pageLink {
     color:black;
     z-index: 2;
     position: relative;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 .bitmoji{
     display: none;
 }
 .whiteBox {
     position: absolute;
+    display: flex;
     top: 0;
     width: 90%;
     height: 80%;
     margin: 5%;
     background-color: white;
     z-index: -1;
-    
+    flex-direction: column;
+    justify-content: center;
 }
-@keyframes falldown {
-    from {top: 0vh;}
-    to {top: 100vh;}
-}
+
 .text {
     white-space: pre-line;
     text-align: left;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 2rem;
     display:inline-flexbox;
-    margin: 20% 10% 10% 10%;
+    margin: 0;
+    margin-left: 12%;
+    margin-bottom: 5%;
     width: 65%;
     position: relative;
-    font-size: 30px;
     transition: all 0.5s ease-in;
 }
 
+.textContainer{
+    justify-content: center;
+}
 .mobileOnly {
     visibility: hidden;
 }
@@ -79,17 +84,27 @@
 @media screen and (min-width: 1050px) {
     .bitmoji{
         display: block;
-        position: absolute;
-        top: 20%;
-        left: 65%;
+        
     }
+    .imageContainer{
+        position:absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        left: 55%;
+        height: 40%;
+        top:25%;
 
+    }
     .pageLink {
-        font-size: 30px;
+        font-size: 1.5rem;
     
     }
     .linkContainer{
         width: 45%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     /* .falldownContainer {
         animation-name: falldown;
@@ -103,63 +118,22 @@
     }
     .text {
         position: relative;
-        margin: 10% 0 5% 12%;
+        margin-left: 12%;
+        margin-bottom: 5%;
         width: 40%;
-        font-size: 36px;
+        font-size: 2rem;
     }
     
-}
-@media screen and (max-width: 768px) {
-   
-    .linkContainer {
-        flex-direction: row;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: 1;
-        flex-wrap: wrap;
-        
-        position: relative;
-    }
-    .pageLink {
-        font-size: 18px;
-        margin-bottom: 10%;
-    }
-    
-    .text {
-        font-size: 26px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 35%;
-        text-align: center;
-    }
-    .animationText {
-        visibility: hidden;
-    }
-    .whiteBox {
-        height: 65%;
-        margin-top: 17.5%;
-        margin-bottom: 17.5%;
-    }
-    .linkIcon {
-        color: #fff;
-        font-size: 30px;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
 }
 
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 768px) {
     .pcOnly {
         display: none;
     }
    
     .linkContainer {
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
         margin-top: 0;
         margin-bottom: 0;
@@ -173,14 +147,13 @@
         position: relative;
     }
     .pageLink {
-        font-size: 18px;
+        font-size: 1.25rem;
         margin-bottom: 10%;
     }
     .text {
-        font-size: 22px;
+        font-size: 1.25rem;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 35%;
         text-align: center;
     }
     .animationText {
@@ -196,9 +169,9 @@
     }
     .linkIcon {
         color: #fff;
-        font-size: 30px;
-        margin-left: 1%;
-        margin-right: 1%;
+        font-size: 2rem;
+        margin-left: 2%;
+        margin-right: 2%;
         text-decoration: none;
     }
     .linkIcon:hover {
@@ -207,7 +180,7 @@
     }
     .iconContainer {
         position: absolute;
-        bottom: 15%;
+        bottom: 10%;
         width: 100%;
         align-items: center;
     }

@@ -17,7 +17,7 @@ const Position = (props) => {
             <Card style={{ width: '80%'}} className='card h-100'>
                 <Card.Img variant="top" src={props.img}/>
                 <Card.Body className='cardBody h-100'>
-                    <Card.Title className='cardTitle'>{props.title}</Card.Title>
+                    <Card.Text className='cardTitle'>{props.title }</Card.Text>
                     <Card.Text className='cardCompany'>{props.company}</Card.Text>
                     <Card.Text className='cardDuration'>{props.duration}</Card.Text>
                     <Card.Text style = {{height: props.height}}className='cardDescription h-100'>{props.description}</Card.Text>
@@ -105,7 +105,7 @@ const Skills = (props) => {
         </div>
         <Collapse in={props.skills } style={{width: '100%'}}>
             <Container>
-                <Row className='row rowSkill' >
+                <Row className='row rowSkillPC rowSkill' >
                     <Col  xs={12} md={4} className='col colSkill'>
                              <h5 className='h5'>Python</h5>
                              <h5 className='h5'>C</h5>
@@ -120,9 +120,24 @@ const Skills = (props) => {
                          
                     </Col>
                     <Col  xs={12} md={4} className='col colSkill'>
-                            <h5 className='h5'>Object Oriented Programming (OOP)</h5>
+                            <h5 className='h5'>Object Oriented Programming</h5>
                             <h5 className='h5'>Drupal</h5>
-                            <h5 className='h5'>UI/UX Design with Figma and Adobe XD</h5>
+                            <h5 className='h5'>UI/UX Design with Figma </h5>
+                    </Col>
+                </Row>
+                <Row className='row rowSkillMobile rowSkill' >
+                    <Col  xs={12} md={4} className='col colSkill'>
+                        <h5 className='h5'>Python</h5>
+                        <h5 className='h5'>Java</h5>
+                        <h5 className='h5'>C</h5>
+                        <h5 className='h5'>Object Oriented Programming</h5>
+                        <h5 className='h5'>React/React Native</h5>
+                        <h5 className='h5'>Git</h5>
+                        <h5 className='h5'>Bootstrap</h5>
+                        <h5 className='h5'>HTML</h5>
+                        <h5 className='h5'>CSS</h5>
+                        <h5 className='h5'>Drupal</h5>
+                        <h5 className='h5'>UI/UX Design with Figma</h5>
                     </Col>
                 </Row>
             </Container>

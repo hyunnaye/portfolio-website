@@ -28,11 +28,11 @@ class Navbar extends Component {
                             </li>
                         )
                     })}
-                    <a className="fab fa-linkedin navIconPC navIcon" href='//www.linkedin.com/in/nayeon-hyun-9b08a119a/'></a>
-                    <a className="fab fa-github navIconPC navIcon" href='//www.github.com/hyunnaye'></a>
+                    <a className="fab fa-linkedin navIconPC navIcon" href='//www.linkedin.com/in/nayeon-hyun-9b08a119a/'> </a>
+                    <a className="fab fa-github navIconPC navIcon" href='//www.github.com/hyunnaye'> </a>
                     <div className='navIconMobile'>
-                        <a className="fab fa-linkedin navIcon" href='//www.linkedin.com/in/nayeon-hyun-9b08a119a/'></a>
-                        <a className="fab fa-github navIcon" href='//www.github.com/hyunnaye'></a>
+                        <a className="fab fa-linkedin navIcon" href='//www.linkedin.com/in/nayeon-hyun-9b08a119a/'> </a>
+                        <a className="fab fa-github navIcon" href='//www.github.com/hyunnaye'> </a>
                     </div>
                 </ul>
             </nav>

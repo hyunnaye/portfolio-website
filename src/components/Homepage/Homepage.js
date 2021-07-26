@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './homepage.css';
 import bitmoji from '../../assets/bitmoji-3.png';
 import { useSpring, animated } from 'react-spring';
-import { Link } from 'react-router-dom';
 
 
 function HomepageLinks() {
@@ -46,15 +45,19 @@ function Homepage() {
                 onMouseLeave={effect ? () => setProps({xys: [0, 0, 1]}) : null} 
                 style={{transform: props.xys.to(trans)}}>
                     <div className='textContainer'>
-                        <div className='whiteBox'/>
-                        <p className='text'>{text}</p>
-                        <HomepageLinks className='HomepageButtons'  />  
+                        <div className='whiteBox'>
+                                <p className='text'>{text}</p>
+                                <HomepageLinks className='HomepageButtons'  /> 
+                        </div>
+                         
                     </div>
-                    <img src={bitmoji} className='bitmoji' alt="icon" />
+                    <div className='imageContainer'>
+                         <img src={bitmoji} className='bitmoji' alt="icon" />
+                    </div>
             </animated.div>
             <div className='iconContainer mobileOnly'>
-                <a className="fab fa-linkedin linkIcon" href='//www.linkedin.com/in/nayeon-hyun-9b08a119a/'></a>
-                <a className="fab fa-github linkIcon" href='//www.github.com/hyunnaye'></a>
+                <a className="fab fa-linkedin linkIcon" href='//www.linkedin.com/in/nayeon-hyun-9b08a119a/'> </a>
+                <a className="fab fa-github linkIcon" href='//www.github.com/hyunnaye'> </a>
             </div>
             <p className='animationText'>Hover animation can be enabled/disabled by clicking</p>
         </div>

@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
 }
 
 .navbar-logo {
@@ -12,7 +11,7 @@
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 .navbar-logo:hover {
@@ -29,7 +28,7 @@
     width: 80vw;
     justify-content: end;
     margin-right: 2rem;
-    font-size: 18px;
+    font-size: 1.2rem;
     margin-top: 1em;
 
 }
@@ -61,7 +60,7 @@
 .navIcon {
     color: white;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 1.8rem;
     padding: 0 1rem;
 }
 .navIcon:hover {
@@ -117,7 +116,7 @@
     }
     .nav-links {
         text-align: center;
-        font-size: 18px;
+        font-size: 1.2rem;
         padding: 1.5rem;
         width: 100%;
         display: table;
@@ -140,7 +139,7 @@
     }
     .navbar-logo {
         position: absolute;
-        top: 20%;
+        top: 15%;
         left: 0;
         transform: translate(15%, 35%);
     }
