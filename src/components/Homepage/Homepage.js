@@ -8,7 +8,7 @@ function HomepageLinks() {
     const resume = <a className ='pageLink' href='/experience'>Experience</a>
     const projects = <a className ='pageLink' href='/projects'>Projects</a>
     const linkedIn = <a className ='pageLink pcOnly' href='//www.linkedin.com/in/nayeon-hyun-9b08a119a/'>LinkedIn</a>
-    const github = <a className ='pageLink pcOnly'  href='//www.github.com/in/hyunnaye/'>GitHub</a>
+    const github = <a className ='pageLink pcOnly'  href='//www.github.com/hyunnaye/'>GitHub</a>
 
     return(
         <div className='linkContainer'>
