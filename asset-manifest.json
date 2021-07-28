@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.181c4599.chunk.css",
-    "main.js": "/static/js/main.0cf45ad0.chunk.js",
-    "main.js.map": "/static/js/main.0cf45ad0.chunk.js.map",
+    "main.css": "/static/css/main.979aa72a.chunk.css",
+    "main.js": "/static/js/main.ca0f1fcc.chunk.js",
+    "main.js.map": "/static/js/main.ca0f1fcc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.56a8dca1.js",
     "runtime-main.js.map": "/static/js/runtime-main.56a8dca1.js.map",
     "static/js/2.aa910b8a.chunk.js": "/static/js/2.aa910b8a.chunk.js",
     "static/js/2.aa910b8a.chunk.js.map": "/static/js/2.aa910b8a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.181c4599.chunk.css.map": "/static/css/main.181c4599.chunk.css.map",
+    "static/css/main.979aa72a.chunk.css.map": "/static/css/main.979aa72a.chunk.css.map",
     "static/js/2.aa910b8a.chunk.js.LICENSE.txt": "/static/js/2.aa910b8a.chunk.js.LICENSE.txt",
     "static/media/bitmoji-3.67854da7.png": "/static/media/bitmoji-3.67854da7.png",
     "static/media/cookout.e289b014.png": "/static/media/cookout.e289b014.png",
     "static/media/neurotechuoft.21293cc6.jpg": "/static/media/neurotechuoft.21293cc6.jpg",
     "static/media/portfolio.99f8bba5.PNG": "/static/media/portfolio.99f8bba5.PNG",
-    "static/media/proteinmaster.75cdab49.PNG": "/static/media/proteinmaster.75cdab49.PNG",
+    "static/media/proteinmaster.704be017.PNG": "/static/media/proteinmaster.704be017.PNG",
     "static/media/techconference.78faed89.jpg": "/static/media/techconference.78faed89.jpg",
     "static/media/uoft.8de741e4.png": "/static/media/uoft.8de741e4.png",
     "static/media/uoftlaw.e3e26442.jpg": "/static/media/uoftlaw.e3e26442.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.56a8dca1.js",
     "static/js/2.aa910b8a.chunk.js",
-    "static/css/main.181c4599.chunk.css",
-    "static/js/main.0cf45ad0.chunk.js"
+    "static/css/main.979aa72a.chunk.css",
+    "static/js/main.ca0f1fcc.chunk.js"
   ]
 }
