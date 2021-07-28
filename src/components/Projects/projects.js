@@ -10,9 +10,9 @@ import portfolio from '../../assets/portfolio.PNG';
 const Project = (props) => {
     return(
         <div className='h-100'>
-            <Card style={{ width: '80%'}} className='card h-100'>
+            <Card className='card h-100'>
                 <Card.Img variant="top" src={props.img}/>
-                <Card.Body className='cardBody h-100'>
+                <Card.Body className='cardBody1 h-100'>
                     <Card.Text className='cardTitle'>{props.title }</Card.Text>
                     <Card.Text style = {{height: props.height}}className='cardDescription '>{props.description}</Card.Text>
                     <Card.Text style = {{fontWeight: 'bold'}}>{props.description1}</Card.Text>
@@ -52,7 +52,7 @@ const TechConferenceSystem =() => {
     )
 }
 const Portfolio = () => {
-    const description = "My personal website showcasing my experiences and projects. This website is created with React, Bootstrap and custom CSS." 
+    const description = "My personal website showcasing my experiences and projects. This website is created with React, Bootstrap and CSS." 
 
     return(
         <Project title='Personal Website' description={description}
@@ -71,13 +71,13 @@ const Projects = () => {
             
             <Container>
                 <Row className='row' >
-                    <Col  xs={12} md={4} className='col'>
+                    <Col  xs={12} md={12} className='col'>
                         <Portfolio />
                     </Col>
-                    <Col  xs={12} md={4} className='col'>
+                    <Col  xs={12} md={12} className='col'>
                         <ProteinMaster />
                     </Col>
-                    <Col  xs={12} md={4} className='col'>
+                    <Col  xs={12} md={12} className='col'>
                         <TechConferenceSystem />
                     </Col>     
                 </Row>
