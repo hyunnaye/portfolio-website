@@ -72,14 +72,14 @@ const Projects = () => {
             <Container>
                 <Row className='row' >
                     <Col  xs={12} md={12} className='col'>
-                        <Portfolio />
-                    </Col>
+                        <TechConferenceSystem />
+                    </Col>  
                     <Col  xs={12} md={12} className='col'>
                         <ProteinMaster />
-                    </Col>
+                    </Col>  
                     <Col  xs={12} md={12} className='col'>
-                        <TechConferenceSystem />
-                    </Col>     
+                        <Portfolio />
+                    </Col>
                 </Row>
             </Container>
         </div>
