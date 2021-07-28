@@ -148,7 +148,7 @@ const Skills = (props) => {
 const Education = (props) => {
     return(
     <>
-        <div className={props.education ? 'dropdown' : 'dropdown border border-1 border-secondary'} onClick={() => props.setEducation(!props.education)}>
+        <div className='dropdown' onClick={() => props.setEducation(!props.education)}>
             <h2 className='header'>Education</h2>
             <i className={props.education  ? "fas arrow fa-chevron-up" : "fas arrow fa-chevron-down"} ></i>
         </div>
