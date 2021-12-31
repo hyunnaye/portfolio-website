@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import './homepage.css';
+import './Homepage.css';
 import bitmoji from '../../assets/bitmoji-3.png';
+import memoji from '../../assets/memoji.png';
 import { useSpring, animated } from 'react-spring';
 
 
@@ -52,7 +53,7 @@ function Homepage() {
                          
                     </div>
                     <div className='imageContainer'>
-                         <img src={bitmoji} className='bitmoji' alt="icon" />
+                         <img src={memoji} className='bitmoji' alt="icon" />
                     </div>
             </animated.div>
             <div className='iconContainer mobileOnly'>

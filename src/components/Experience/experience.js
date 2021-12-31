@@ -110,17 +110,18 @@ const Skills = (props) => {
                              <h5 className='h5'>Python</h5>
                              <h5 className='h5'>C</h5>
                              <h5 className='h5'>Bootstrap</h5>
-                             <h5 className='h5'>HTML</h5>
+                             <h5 className='h5'>HTML/CSS</h5>
                     </Col>
                     <Col  xs={12} md={4} className='col colSkill'>
                             <h5 className='h5'>Java</h5>
                             <h5 className='h5'>React/React Native</h5>
                             <h5 className='h5'>Git</h5>
-                            <h5 className='h5'>CSS</h5>
+                            <h5 className='h5'>SQL</h5>
                          
                     </Col>
                     <Col  xs={12} md={4} className='col colSkill'>
                             <h5 className='h5'>Object Oriented Programming</h5>
+                            <h5 className='h5'>Django</h5>
                             <h5 className='h5'>Drupal</h5>
                             <h5 className='h5'>UI/UX Design with Figma </h5>
                     </Col>
