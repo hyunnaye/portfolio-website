@@ -3,6 +3,7 @@ import './App.css';
 import React from "react";
 import Homepage from './components/Homepage/homepage';
 import Projects from './components/Projects/projects';
+import Home from './components/Homepage/home';
 import Experience from './components/Experience/experience';
 import {
   BrowserRouter as Router,
@@ -16,9 +17,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
       <Switch>
-      `   <Route exact path='/' component={Homepage}/>
-          <Route exact path='/projects' component={Projects}/>
-          <Route exact path='/experience' component={Experience}/>
+      `   <Route exact path='/' component={Home}/>
       </Switch>
         
       </div>

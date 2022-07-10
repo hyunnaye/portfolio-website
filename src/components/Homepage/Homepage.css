@@ -1,4 +1,4 @@
-
+/* 
 .homeContainer {
     background: linear-gradient(180deg, rgb(125, 139, 228) 0%, rgb(94, 47, 156) 100%);
     width: 100%;
@@ -113,7 +113,9 @@
         z-index: 1;
         margin-left: 20%;
     } */
-    .whiteBox {
+    
+    
+    /* .whiteBox {
         border-radius: 60px;
     }
     .text {
@@ -184,4 +186,4 @@
         width: 100%;
         align-items: center;
     }
-}
+} */ 
