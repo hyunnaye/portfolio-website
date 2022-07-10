@@ -45,7 +45,7 @@ function Home() {
     return(
         <div className='homeContainer'>
             <div className='imageContainer'>
-                <img src={bg} className='bg'/>
+                <img src={bg} className='bg'/> {/* Image credit: @scottwebb on Unsplash */}
             </div>
             <div className='header'>
                 <h1 className='title'>Nayeon Hyun</h1>
