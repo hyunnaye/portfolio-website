@@ -1,10 +1,7 @@
   
 import './App.css';
 import React from "react";
-import Homepage from './components/Homepage/homepage';
-import Projects from './components/Projects/projects';
 import Home from './components/Homepage/home';
-import Experience from './components/Experience/experience';
 import {
   BrowserRouter as Router,
   Switch,
