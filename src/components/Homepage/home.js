@@ -49,7 +49,7 @@ function Home() {
             </div>
             <div className='header'>
                 <h1 className='title'>Nayeon Hyun</h1>
-                <h4 className='position'>Undergraduate Bioinformatics Research Student</h4>
+                <h4 className='position'>Software Developer</h4>
                 <HomepageLinks />
             </div>
         </div>
